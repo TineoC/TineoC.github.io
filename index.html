@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="index.css" />
 	<title>Max Music Website</title>
+	<script src="https://kit.fontawesome.com/f7bc1022b8.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -14,38 +16,69 @@
 		<a href="#home">Home</a></>
 		<a href="#my-music">My Music</a>
 		<a href="#about-me">About Me</a>
-		<a href="#contact">Contact</a>
+		<a href="./contact.html">Contact</a>
 	</nav>
 
 	<main>
 		<section class="full-screen" id="home">
-			<h1 class="title">Max Lastname</h1>
+			<h1 class="title">𓁿MAX NUSIC𓁿</h1>
 
-			<img src="https://via.placeholder.com/200" />
+			<!--1. Background image
 
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora adipisci eaque error dicta inventore numquam
-				alias possimus nostrum officiis omnis, illum voluptas aut, perferendis assumenda obcaecati nam velit ipsum.
-				Ipsam.</p>
-		</section>
+			2. Profile picture
 
-		<section class="full-screen" id="my-music">
-			<h3 class="title">My Music</h3>
+			3. Instruments I play-->
 
-			<div><iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+			<div class="content">
 
-				<iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+				<div class="picture"> <img src="https://via.placeholder.com/200" />
+				</div>
+
+				<div class="text">
+
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora adipisci eaque error dicta inventore
+						numquam
+						alias possimus nostrum officiis omnis, illum voluptas aut, perferendis assumenda obcaecati nam velit ipsum.
+						Ipsam.</p>
+					<div id="social-media">
+						<a href="www.instagram.com"><i class="social fa-brands fa-instagram"></i></a>
+						<a href="www.facebook.com"><i class="social fa-brands fa-facebook"></i></a>
+						<a href="www.twitter.com"><i class="social fa-brands fa-twitter"></i></a>
+					</div>
+				</div>
 			</div>
 
 
 		</section>
 
-		<section class="full-screen" id="about-me">
+		<section id="my-music">
+			<h3 class="title">My Music</h3>
+
+			<div>
+
+				<div>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+
+					<small>Video description:</small>
+				</div>
+
+				<div>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+
+					<small>Video description:</small>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section id="about-me">
 			<h3 class="title">About Me</h3>
 
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque vel laudantium voluptate qui beatae nemo
@@ -71,40 +104,17 @@
 				corrupti? Earum reprehenderit officiis maxime porro explicabo possimus tempore qui, neque soluta repellat
 				laudantium numquam!</p>
 
-		</section>
-
-		<section id="contact">
-			<h3 class="title">Contact</h3>
-
-			<form>
-				<label for="full-name">
-					<input type="text" name="full-name" id="full-name" placeholder="Write your full name..." />
-				</label>
-
-				<label for="sex">
-					<select name="sex" id="sex">
-						<option value="M" selected>Male</option>
-						<option value="F">Female</option>
-						<option value="ND">Not defined</option>
-					</select>
-				</label>
-
-				<label for="email">
-					<input type="email" name="email" id="email" placeholder="Write your email..." />
-				</label>
-
-				<label for="phone-number">
-					<input type="tel" name="phone-number" id="phone-number" placeholder="Write your phone number..." />
-				</label>
-
-				<label for="description">
-					<textarea name="description" id="description" cols="30" rows="10" placeholder="Write some text..."></textarea>
-				</label>
-
-				<button type="submit">Submit</button>
-			</form>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896.3036737425185!2d-6.395213879299044!3d53.985625587818085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cc1480f80aaf%3A0x61ff4da2419521e7!2sDundalk%20Institute%20of%20Technology!5e0!3m2!1ses-419!2sdo!4v1669758413242!5m2!1ses-419!2sdo"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
 	</main>
+
+	<footer>
+		Max Dundalk &copy; 2022
+	</footer>
+
 </body>
 
 </html>
