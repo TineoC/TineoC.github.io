@@ -11,3 +11,10 @@ countryList.map((country) => {
 
 	select.appendChild(countryOption);
 });
+
+const contactButton = document.getElementById("send-contact");
+
+contactButton.addEventListener("click", (event) => {
+	event.preventDefault();
+	window.location.href = "../thanks/thanks.html";
+});
