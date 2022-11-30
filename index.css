@@ -11,7 +11,18 @@
 html,
 body {
 	height: 100%;
-	background-image: url("./public/background.jpg");
+}
+
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.wrap {
+	position: relative;
 }
 
 ul {
@@ -28,20 +39,18 @@ a:hover {
 }
 
 nav {
+	z-index: 1;
 	display: flex;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 40px;
-	justify-content: flex-end;
+	justify-content: space-between;
+	padding: 0 1rem;
 	align-items: center;
 	flex-direction: row;
 	background-color: #028090;
 	font-weight: bold;
-}
-
-.navbar-left {
-	align-self: flex-start;
 }
 
 nav a {
@@ -52,43 +61,64 @@ nav a {
 	min-height: 100vh;
 }
 
-main {
-	margin-top: 40px;
-}
-
 section {
 	text-align: justify;
-	width: 90%;
 	margin: 0 auto;
+	width: 80%;
 }
 
 section .title {
 	width: fit-content;
-	margin: 0 auto;
+	margin: 2rem auto;
+	font-size: 3rem;
+	color: #fff;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-form label {
-	margin-bottom: 0.5em;
-}
-
-#home .content {
+#home {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
-#home .text {
+#home .content .image-with-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#home .content .text {
+	align-self: center;
+	width: 70%;
+	font-size: 1.2rem;
+}
+
+#home .content .text p {
+	margin-bottom: 1rem;
+}
+
+#home #social-media {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#social-media i {
+	font-size: 1.6rem;
+	margin-right: 1rem;
+}
+
+#social-media .social:hover {
+	color: lightgray;
+}
+
+#my-music {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
-#my-music div {
+#my-music .videos {
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
@@ -96,7 +126,7 @@ form label {
 	background-color: #9f87af;
 	border: 3px solid #fff;
 	border-radius: 1rem;
-	padding: 2rem 1rem;
+	padding: 1rem 2rem;
 }
 
 #about-me p {

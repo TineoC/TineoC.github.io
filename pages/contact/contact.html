@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Max</title>
+	<link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+	<h3 class="title">Contact Max</h3>
+	<form>
+		<div class="form-section" id="contact-details">
+			<label for="full-name">
+				Full Name
+				<input required type="text" name="full-name" id="full-name" placeholder="Write your full name..." />
+			</label></br>
+
+			<label for="address">
+				Full Address
+				<input required type="text" name="full-address" id="full-address" placeholder="Write your full address..." />
+			</label></br>
+
+			<label for="country">
+				Country
+				<select required name="country" id="country"></select>
+			</label></br>
+
+			<label for="DOB">
+				Date of Birth
+				<input required type="date" max="2005-01-01" name="DOB" id="DOB">
+			</label></br>
+
+			<label for="sex">
+				Sex
+				<select required name="sex" id="sex">
+					<option value="M" selected>Male</option>
+					<option value="F">Female</option>
+					<option value="ND">Not defined</option>
+				</select>
+			</label></br>
+
+			<label for="email">
+				E-mail
+				<input required type="email" name="email" id="email" placeholder="Write your email..." />
+			</label></br>
+
+			<label for="phone-number">
+				Phone number
+				<input required type="tel" name="phone-number" id="phone-number" placeholder="Write your phone number..." />
+			</label></br>
+		</div>
+
+		<div class="form-section" id="personal-info">
+			<label for="schedule">Schedule
+				<select required name="schedule" id="schedule">
+					<option value="morning">7-9 Am</option>
+					<option value="afternoon">13-15 PM</option>
+					<option value="nocturne">18-20 PM</option>
+				</select>
+			</label></br>
+
+			<label for="date">Date
+				<select required name="date" id="date">
+					<option value="monday">Monday</option>
+					<option value="wednesday">Wednesday</option>
+					<option value="saturdays">Saturdays</option>
+				</select>
+			</label></br>
+
+
+			<label for="purpouse">
+				Purpouse
+				<select required name="purpouse" id="purpouse">
+					<option value="concert">Concert</option>
+					<option value="event">Event</option>
+					<option value="personal">Personal</option>
+					<option value="other">Other</option>
+				</select>
+			</label></br>
+
+			<p>Skill level
+				<input type="radio" name="skill-level" id="skill-level" value="0">0
+				<input type="radio" name="skill-level" id="skill-level" value="1">1
+				<input type="radio" name="skill-level" id="skill-level" value="2">2
+				<input type="radio" name="skill-level" id="skill-level" value="3">3
+				<input type="radio" name="skill-level" id="skill-level" value="4">4
+				<input type="radio" name="skill-level" id="skill-level" value="5">5
+			</p>
+
+			<p>Instrument
+				<input type="radio" name="instrument" id="instrument" value="piano">Piano
+				<input type="radio" name="instrument" id="instrument" value="saxo">Saxophone
+				<input type="radio" name="instrument" id="instrument" value="acoustic guitar">Acoustic guitar
+				<input type="radio" name="instrument" id="instrument" value="electric guitar">Electric guitar
+				<input type="radio" name="instrument" id="instrument" value="other">Other
+			</p>
+		</div>
+
+		<label id="description" for="description">
+			Description</br>
+			<textarea name="description" id="description" cols="200" rows="10"
+				placeholder="Write some text..."></textarea></br>
+		</label>
+
+		<!--<button id="submit-button" type="submit">Submit</button>-->
+
+		<a href="../thanks/thanks.html">Submit</a>
+	</form>
+	<script type="module" src="contact.js"></script>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="./index.css" />
 	<title>Max Music Website</title>
 	<script src="https://kit.fontawesome.com/f7bc1022b8.js" crossorigin="anonymous"></script>
 
@@ -13,108 +13,127 @@
 
 <body>
 	<nav id="navbar">
-		<a href="#home">Home</a></>
-		<a href="#my-music">My Music</a>
-		<a href="#about-me">About Me</a>
-		<a href="./contact.html">Contact</a>
+		<div class="logo">
+			<i class="fa-solid fa-music"></i> My Logo
+		</div>
+		<div class="links"><a href="#home">Home</a></>
+			<a href="#my-music">My Plays</a>
+			<a href="#about-me">About Me</a>
+			<a href="./pages/contact/contact.html">Contact</a>
+		</div>
+
 	</nav>
 
-	<main>
-		<section class="full-screen" id="home">
-			<h1 class="title">𓁿MAX NUSIC𓁿</h1>
+	<main> <img class="bg" src="./public/background.jpg" alt="" srcset="">
 
-			<!--1. Background image
+		<div class="wrap">
+			<section class="full-screen" id="home">
+				<!--1. Background image
 
 			2. Profile picture
 
 			3. Instruments I play-->
 
-			<div class="content">
+				<div class="content">
 
-				<div class="picture"> <img src="https://via.placeholder.com/200" />
+					<h1 class="title">𓁿 MAX MUSIC 𓁿</h1>
+
+					<div class="image-with-text">
+						<div class="picture">
+							<img src="https://via.placeholder.com/250" />
+						</div>
+
+						<div class="text">
+
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam distinctio accusamus esse
+								eum
+								molestiae est odit. Quis, facilis, vel commodi reiciendis obcaecati ipsam natus nemo odit fugit rem
+								quam..
+							</p>
+
+							<div id="social-media">
+								<a href="www.instagram.com"><i class="social fa-brands fa-instagram"></i></a>
+								<a href="www.facebook.com"><i class="social fa-brands fa-facebook"></i></a>
+								<a href="www.twitter.com"><i class="social fa-brands fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
-				<div class="text">
 
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora adipisci eaque error dicta inventore
-						numquam
-						alias possimus nostrum officiis omnis, illum voluptas aut, perferendis assumenda obcaecati nam velit ipsum.
-						Ipsam.</p>
-					<div id="social-media">
-						<a href="www.instagram.com"><i class="social fa-brands fa-instagram"></i></a>
-						<a href="www.facebook.com"><i class="social fa-brands fa-facebook"></i></a>
-						<a href="www.twitter.com"><i class="social fa-brands fa-twitter"></i></a>
+			</section>
+
+			<section class="full-screen" id="my-music">
+				<h3 class="title">My Plays</h3>
+
+				<div id="plays" class="videos">
+
+					<div id="video1">
+						<video width="426" height="240" controls>
+							<source src="./public/videos/video1.mp4" type="video/mp4">
+						</video>
+
+						<h2 class="video-subtitle">Pehli Mohabbat</h2>
+						<h4 class="video-caption">Song from Darshan Raval</h4>
+
+						<!--<small>Video description:</small>-->
+					</div>
+
+					<div id="video2">
+						<video width="426" height="240" controls>
+							<source src="./public/videos/video3.mp4" type="video/mp4">
+						</video>
+
+						<h2 class="video-subtitle">Beauty and a Beat</h2>
+						<h4 class="video-caption">Song from Justin Bieber ft. Nicky Minaj</h4>
 					</div>
 				</div>
-			</div>
 
 
-		</section>
+			</section>
 
-		<section id="my-music">
-			<h3 class="title">My Music</h3>
+			<section id="about-me">
+				<h3 class="title">About Me</h3>
 
-			<div>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque vel laudantium voluptate qui beatae nemo
+					numquam, reprehenderit sed deleniti quos accusamus quaerat facere doloremque quia esse aperiam nobis
+					perferendis. Officiis.</p>
 
-				<div>
-					<iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+				<p>Fugit maxime sunt saepe eligendi necessitatibus, pariatur voluptatibus explicabo laboriosam ut. Magnam
+					similique nostrum, adipisci nam cupiditate nisi laborum officiis hic quae! Aperiam laudantium iure nobis
+					praesentium et tenetur illum!</p>
 
-					<small>Video description:</small>
-				</div>
+				<p>Tempora enim qui, atque facere perferendis iure reiciendis veritatis nostrum assumenda odio magnam architecto
+					accusamus ad dolorem quis. Natus quibusdam esse inventore, ex eos minima rem. Praesentium tempora dolore
+					molestias.</p>
 
-				<div>
-					<iframe width="426" height="240" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+				<p>Minima deserunt autem error, incidunt itaque eum, possimus quasi minus voluptates quia non ratione. Natus
+					debitis ab eum, quibusdam porro sapiente inventore, aliquam praesentium laboriosam itaque voluptatum dolore
+					velit labore.</p>
 
-					<small>Video description:</small>
-				</div>
-			</div>
+				<p>Laboriosam doloribus rerum sequi quaerat, sed expedita tempore deserunt non molestiae, porro voluptates
+					ducimus
+					autem. Non sed quisquam voluptate, culpa incidunt eum est dolorum nobis, quod porro doloribus recusandae ex.
+				</p>
 
+				<p>Animi molestias, deserunt maxime culpa alias ipsam quos recusandae eaque ducimus nulla repellendus quod,
+					ipsum
+					corrupti? Earum reprehenderit officiis maxime porro explicabo possimus tempore qui, neque soluta repellat
+					laudantium numquam!</p>
 
-		</section>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896.3036737425185!2d-6.395213879299044!3d53.985625587818085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cc1480f80aaf%3A0x61ff4da2419521e7!2sDundalk%20Institute%20of%20Technology!5e0!3m2!1ses-419!2sdo!4v1669758413242!5m2!1ses-419!2sdo"
+					width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
 
-		<section id="about-me">
-			<h3 class="title">About Me</h3>
-
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque vel laudantium voluptate qui beatae nemo
-				numquam, reprehenderit sed deleniti quos accusamus quaerat facere doloremque quia esse aperiam nobis
-				perferendis. Officiis.</p>
-
-			<p>Fugit maxime sunt saepe eligendi necessitatibus, pariatur voluptatibus explicabo laboriosam ut. Magnam
-				similique nostrum, adipisci nam cupiditate nisi laborum officiis hic quae! Aperiam laudantium iure nobis
-				praesentium et tenetur illum!</p>
-
-			<p>Tempora enim qui, atque facere perferendis iure reiciendis veritatis nostrum assumenda odio magnam architecto
-				accusamus ad dolorem quis. Natus quibusdam esse inventore, ex eos minima rem. Praesentium tempora dolore
-				molestias.</p>
-
-			<p>Minima deserunt autem error, incidunt itaque eum, possimus quasi minus voluptates quia non ratione. Natus
-				debitis ab eum, quibusdam porro sapiente inventore, aliquam praesentium laboriosam itaque voluptatum dolore
-				velit labore.</p>
-
-			<p>Laboriosam doloribus rerum sequi quaerat, sed expedita tempore deserunt non molestiae, porro voluptates ducimus
-				autem. Non sed quisquam voluptate, culpa incidunt eum est dolorum nobis, quod porro doloribus recusandae ex.</p>
-
-			<p>Animi molestias, deserunt maxime culpa alias ipsam quos recusandae eaque ducimus nulla repellendus quod, ipsum
-				corrupti? Earum reprehenderit officiis maxime porro explicabo possimus tempore qui, neque soluta repellat
-				laudantium numquam!</p>
-
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896.3036737425185!2d-6.395213879299044!3d53.985625587818085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cc1480f80aaf%3A0x61ff4da2419521e7!2sDundalk%20Institute%20of%20Technology!5e0!3m2!1ses-419!2sdo!4v1669758413242!5m2!1ses-419!2sdo"
-				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</section>
+			<footer>
+				Max Dundalk &copy; 2022
+			</footer>
+		</div>
 	</main>
-
-	<footer>
-		Max Dundalk &copy; 2022
-	</footer>
-
 </body>
 
 </html>
